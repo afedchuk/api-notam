@@ -39,6 +39,7 @@ CONFIGURATION
 -------------
 
 [
+  // soap client configurations
   'class' => 'app\components\Client',
   'usr' => 'usertest@gmail.com',
   'passwd' => 'usrpassword',
@@ -47,5 +48,9 @@ CONFIGURATION
       'trace' => true,
       'use' => SOAP_LITERAL,
       'cache_wsdl' => WSDL_CACHE_NONE,
+  ]
+  // for using google maps
+  'params' => [
+        'googleApi' => 'google_api_key'
   ]
 ]
